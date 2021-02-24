@@ -175,6 +175,7 @@ h2 {
   #reviewsBox {
     width: 93%;
     margin: 0;
+    margin-bottom: 5%;
   }
 
   #reviewsBox > div {
