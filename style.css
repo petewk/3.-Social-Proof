@@ -1,0 +1,195 @@
+:root {
+  --mainPurple: rgb(81 31 80);
+  --lightPurple: rgb(247 242 248);
+  --pinkPurple: rgb(132 63 115);
+}
+
+.attribution {
+  position:  fixed;
+  bottom: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+body {
+  background-color:rgb(252 252 252);
+  font-family: 'Spartan', sans-serif;
+}
+
+#body {
+  width: 95%;
+  margin: 0 auto;
+  padding: 50px 100px 0 100px;
+}
+
+#ratingsBox {
+  display: inline-block;
+  max-width: 45vw;
+  position: relative;
+  bottom: 80px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  margin-left: 130px;
+}
+
+#titleBox {
+  max-width: 30%;
+  display: inline-block;
+  margin-left: 120px;
+  font-size: 0.9rem;
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-size: 3.5em;
+color: var(--mainPurple);
+}
+
+h2 {
+  color: lightgray;
+}
+
+#reviewsBox {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#reviewsBox > div {
+  background-color: var(--mainPurple);
+  width: 375px;
+  height: 250px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0 2%;
+  padding: 30px;
+}
+
+
+#ratingsBox > div {
+  background-color: hsl(300, 24%, 96%);
+  padding: 18px;
+  color: var(--mainPurple);
+  font-weight: 700;
+  width: 60%;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: inline-block;
+}
+
+
+.quoteImg {
+  border-radius: 50%;
+  float: left;
+  margin: 10px;
+}
+
+.reviewName {
+  color: white;
+  font-size: 1em;
+  margin-top: 25px;
+}
+
+.buyer {
+  color: hsl(333, 80%, 67%);
+  font-size: 1em;
+}
+
+#reviewsBox > div > h1, #reviewsBox > div > h2 {
+  margin-left: 50px;
+}
+
+#reviewsBox > div > p {
+  display: block;
+  margin-top: 50px;
+  color: white;
+}
+
+#rating2 {
+  position: relative;
+  left: 50px
+}
+
+#rating3 {
+  position: relative;
+  left: 100px;
+}
+
+#review2 {
+  position: relative;
+  top: 20px;
+}
+#review3 {
+  position: relative;
+  top: 40px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  #body {
+    width: 99%;
+    padding:50px 0;
+  }
+
+  #titleBox {
+    max-width: 88%;
+    margin: 0 auto 25%;
+    text-align: center;
+    padding: 3px;
+  }
+
+  #titleBox > h2 {
+    font-weight: 500;
+    color: #511f50;
+  }
+
+  #ratingsBox {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .stars {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  #ratingsBox > div {
+    display: block;
+    width: 85%;
+    font-size: 0.8rem;
+
+    text-align: center;
+    line-height: 2em;
+    margin:0 auto;
+    margin-bottom: 25px;
+  }
+
+  #reviewsBox {
+    width: 93%;
+    margin: 0;
+  }
+
+  #reviewsBox > div {
+    width: 270px;
+    height: 200px;
+    font-size: 0.8em;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #rating2, #rating3 {
+    left: 0;
+  }
+
+
+
+
+}
